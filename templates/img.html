@@ -1,0 +1,9 @@
+{% block content %}
+<form method="post" action="{{ url_for('show_img') }}" enctype="multipart/form-data">
+</fomr>
+<div>
+  {% if img_url %}
+  <p><img src="{{ img_url }}"></p>
+  {% endif %}
+</div>
+{% endblock %}
